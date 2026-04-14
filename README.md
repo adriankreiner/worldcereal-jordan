@@ -39,7 +39,7 @@ The script is idempotent: tiles whose output directory already contains a
 `.tif` are skipped, so re-runs after a partial failure only retry the missing
 tiles.
 
-## Gotchas encountered (and fixes applied in the script)
+## Issues encountered (and fixes applied in the script)
 
 1. **Wrong backend.** `ESA_WORLDCEREAL_IRRIGATION` is **not** on
    `openeo.dataspace.copernicus.eu`. It lives on the federated endpoint
