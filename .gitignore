@@ -1,0 +1,12 @@
+# Downloaded WorldCereal rasters — reproducible via download_jordan_irrigation.py
+worldcereal_jordan_irrigation/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
