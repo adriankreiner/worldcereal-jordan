@@ -30,10 +30,9 @@ pip install openeo            # installed 0.49.0
 python -u download_jordan_irrigation.py
 ```
 
-On first run, `authenticate_oidc()` prints a URL + device code. Open the URL,
-enter the code, approve. Subsequent runs reuse a cached refresh token (no
-browser needed). Use `python -u` (unbuffered) so the auth URL isn't trapped in
-stdout buffering when running headless.
+On the first run the script pauses once and prints a CDSE login URL. Open it
+in a browser, log in, click approve — the script then continues automatically
+and caches a refresh token, so later runs don't prompt again.
 
 The script is idempotent: tiles whose output directory already contains a
 `.tif` are skipped, so re-runs after a partial failure only retry the missing
